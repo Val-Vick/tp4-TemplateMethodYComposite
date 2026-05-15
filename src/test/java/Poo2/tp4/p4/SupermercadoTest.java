@@ -7,16 +7,13 @@ class SupermercadoTest {
 
 	@Test
 	void testCalculoJubiladoFueraDePromocion() {
-		LogTransaction log = null;
-		CalculadorVenta calc = new CalculadorJubilado(1, log);
-
+		CalculadorVenta calc = new CalculadorJubilado(1, new Log());
 		assertEquals(110.0, calc.calcularPrecio(100.0), 0.01);
 	}
 
 	@Test
 	void testCalculoNoJubiladoEnPromocion() {
-		LogTransaction log = null;
-		CalculadorVenta calc = new CalculadorNoJubilado(5, log);
+		CalculadorVenta calc = new CalculadorNoJubilado(5, new Log());
 		assertEquals(115.0, calc.calcularPrecio(100.0), 0.01);
 	}
 }
