@@ -2,7 +2,7 @@ package Poo2.tp4.p2;
 
 import java.util.ArrayList;
 
-public class HistorioUsuario extends Item {
+public class HistoriaUsuario extends Item {
 	private ArrayList<Item> tareas = new ArrayList<>();;
 
 	@Override

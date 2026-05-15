@@ -14,7 +14,7 @@ public class Proyecto extends Item {
 		return tiempo;
 	}
 
-	public void agregar(HistorioUsuario hi) {
+	public void agregar(HistoriaUsuario hi) {
 		items.add(hi);
 	}
 
